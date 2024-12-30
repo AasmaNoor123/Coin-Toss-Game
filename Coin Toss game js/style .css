@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+body{
+  /* font-family: Arial, sans-serif; */
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
+}
+
+ .container{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s ease;
+    background-color: #5e85c8;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid black;
+    border-style: double;
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    color: #edacdaec;
+    -webkit-text-stroke-color: #070000 ;
+    -webkit-text-stroke-width: .1rem;
+    text-shadow: 1px 1px 6px rgb(17, 1, 1);
+}
+
+.btn {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 2rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    
+    border-radius: 1rem;
+    outline: none;
+   
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 3px solid #d44485;
+    color: #d44485;
+  }
+  .btn:hover {
+    color: #fff;
+    box-shadow: 2px 1px 10px #070000;
+    border: 2.10px solid #fff ;
+  
+  }
+  .btn:hover:after {
+    width: 100%;
+  }
+  .btn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.6s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #d44485;
+    
+  }
+ 
+ .result{
+    position: relative;
+    top: -1rem;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    color: #070000;
+    -webkit-text-stroke-color: #eb77abf0 ;
+    -webkit-text-stroke-width: .1rem;
+    text-shadow: 1px 1px 2px black;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    border: 0px;
+    border-radius: 2rem;
+   width: 14rem;
+    font-weight: bold;
+    background-color: rgb(247, 247, 225);
+
+}
+
+@media screen and (max-width: 768px){
+   .container{
+        width: 90%;
+        padding: 2rem;
+        
+    }
+    h1{
+        font-size: 2.40rem;
+    }
+    .result{
+        font-size: 1.4rem;
+        width: 10rem;
+        position: relative;
+        top: -1.42rem;
+    }
+   .btn{
+     position: relative;
+     top: 1rem;
+        font-size: 1.2rem;
+        min-width: 100px;
+    }
+}
+
+
+
